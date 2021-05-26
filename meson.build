@@ -32,6 +32,28 @@ src_packages = {
     ]
 }
 
+# == List include directories ==
+
+incdirs = []
+
+foreach libpkg : lib_packages
+    incdirs += ['root/@0@/Inc'.format(libpkg)]
+endforeach
+
+foreach srcpkg, srcs : src_packages
+    incdirs += ['root/@0@/Inc'.format(srcpkg)]
+endforeach
+
+
+incs = []
+
+foreach dir : incdirs
+    incs += [dir]
+    message('- Added UT432 header include directory: ' + dir)
+endforeach
+
+inc_obj = include_directories(incs)
+
 
 # == Add individual package dependencies ==
 
@@ -39,18 +61,15 @@ deps = {}
 all_deps = []
 
 foreach libpkg : lib_packages
-    inc = include_directories('root/@0@/Inc'.format(libpkg))
-
-    dep = declare_dependency(include_directories: inc, sources: 'root/@0@/Lib/@0@.lib'.format(libpkg))
+    dep = declare_dependency(include_directories: inc_obj, sources: ['root/@0@/Lib/@0@.lib'.format(libpkg)])
     all_deps += [dep]
     deps += { libpkg: dep }
 endforeach
 
 foreach srcpkg, srcs : src_packages
-    inc = include_directories('root/@0@/Inc'.format(srcpkg))
-    lib = static_library('@0@'.format(srcpkg), srcs)
+    lib = static_library('ut_' + srcpkg, srcs, include_directories: inc_obj)
 
-    dep = declare_dependency(include_directories: inc, link_with: lib)
+    dep = declare_dependency(include_directories: inc_obj, link_with: lib)
     all_deps += [dep]
     deps += { srcpkg: dep }
 endforeach
