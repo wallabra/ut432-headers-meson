@@ -16,22 +16,6 @@ src_packages = {
         'root/XDrv/Src/XDrv.cpp',
         'root/XDrv/Src/XViewport.cpp',
     ],
-    'XMesaGLDrv': [
-        'root/XMesaGLDrv/Src/XMesaGL.cpp',
-        'root/XMesaGLDrv/Src/XMesaGLDrv.cpp',
-    ],
-    'OpenGLDrv': [
-        'root/OpenGLDrv/Src/OpenGL.cpp',
-        'root/OpenGLDrv/Src/OpenGlDrv.cpp',
-    ],
-    'D3DDrv': [
-        'root/D3DDrv/Src/D3DDrv.cpp',
-        'root/D3DDrv/Src/Direct3D7.cpp',
-        'root/D3DDrv/Src/und3d.cpp',
-    ],
-    'XLaunch': [
-        'root/XLaunch/Src/XLaunch.cpp',
-    ],
     'Audio': [
         'root/Audio/Src/AudioCoreLinux.cpp',
         'root/Audio/Src/Audio.cpp',
@@ -45,9 +29,6 @@ src_packages = {
         'root/Setup/Src/Setup.cpp',
         'root/Setup/Src/USetupDefinition.cpp',
         'root/Setup/Src/USetupDefinitionWindows.cpp',
-    ],
-    'UCC': [
-        'root/UCC/Src/UCC.cpp'
     ]
 }
 
