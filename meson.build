@@ -40,9 +40,8 @@ all_deps = []
 
 foreach libpkg : lib_packages
     inc = include_directories('root/@0@/Inc'.format(libpkg))
-    lib = cxx.find_library('root/@0@/Lib/@0@.lib')
 
-    dep = declare_dependency(include_directories: inc, link_with: lib)
+    dep = declare_dependency(include_directories: inc, sources: 'root/@0@/Lib/@0@.lib'.format(libpkg))
     all_deps += [dep]
     deps += { libpkg: dep }
 endforeach
