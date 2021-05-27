@@ -114,9 +114,9 @@ is granted the full right to request the repository be taken down or otherwise
 modified should it not comply with any legal requirements of Epic Games, Inc.'s
 discretion.**
 
-Feel free to contact *rehermann6046@gmail.com* for any inquiries and notices,
-and in fact send any modification or takedown request to that email address,
-with proof that it was sent by Epic Games, Inc. or a representative thereof,
-prior to attempting any litigation. Failure to comply with such a request may be
-used as valid court evidence of an actual unalwful infraction on the part of the
-project owners.
+Feel free to contact *rehermann6046 AT gmail DOT com* for any inquiries and
+notices, and in fact send any modification or takedown request to that email
+address, with proof that it was sent by Epic Games, Inc. or a representative
+thereof, prior to attempting any litigation. Failure to comply with such a
+request may be used as valid court evidence of an actual unalwful infraction
+on the part of the project owners.
