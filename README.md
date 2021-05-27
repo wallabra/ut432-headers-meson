@@ -33,7 +33,7 @@ a simple command like:
 curl -osubprojects/ut432-headers.wrap https://github.com/Gustavo6046/ut432-headers-meson/raw/master/ut432-headers.wrap
 ```
 
-[1]: (ut432-headers.wrap)
+[1]: ut432-headers.wrap
 
 ### Using
 
