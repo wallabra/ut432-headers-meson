@@ -104,7 +104,7 @@ users, do not claim any ownership whatsoever over the public header files that
 Epic Games, Inc. has *freely* distributed to its community over the course of
 Unreal Tournament's ongoing lifespan.
 
-However , files outside the `root/` subdirectory, in particular `meson.build`,
+However, files outside the `root/` subdirectory, in particular `meson.build`,
 are integral parts of the repository, and licensed under its
 terms. See [LICENSE.md][2] for details.
 
