@@ -77,4 +77,4 @@ endforeach
 
 # == Add 'global dependency' ==
 
-ut432_headers = declare_dependency(dependencies: all_deps)
+ut432_dep = declare_dependency(dependencies: all_deps)
